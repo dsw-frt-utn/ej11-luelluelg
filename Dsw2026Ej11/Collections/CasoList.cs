@@ -8,24 +8,24 @@
 //Incluir un método para eliminar un alumno en una determinada posición de la lista
 public class CasoList
 {
-   private List<Alumno> _alumnos = new List<Alumno>();
+   private List<Domain.Alumno> _alumnos = new List<Domain.Alumno>();
  
-    public void AgregarAlumno(Alumno alumno)
+    public void AgregarAlumno(Domain.Alumno alumno)
     {
         _alumnos.Add(alumno);
     }
  
-    public List<Alumno> GetAlumnos()
+    public List<Domain.Alumno> GetAlumnos()
     {
         return _alumnos;
     }
  
-    public Alumno? BuscarPorNombre(string nombre)
+    public Domain.Alumno? BuscarPorNombre(string nombre)
     {
         return _alumnos.Find(a => a.Nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase));
     }
  
-    public void EliminarAlumno(Alumno alumno)
+    public void EliminarAlumno(Domain.Alumno alumno)
     {
         _alumnos.Remove(alumno);
     }

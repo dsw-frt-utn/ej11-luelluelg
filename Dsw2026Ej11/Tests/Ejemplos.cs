@@ -11,12 +11,12 @@ internal class Ejemplos
     //Eliminar el primer elemento de la lista y listar por consola los alumnos
     public static void EjemploList()
     {
-        var casoList = new CasoList();
+        var casoList = new Collections.CasoList();
  
         // Agregar 3 alumnos a la lista
-        var a1 = new Alumno(1, "Ana Garcia", 8.5);
-        var a2 = new Alumno(2, "Carlos López", 7.0);
-        var a3 = new Alumno(3, "Maria Fernandez", 9.2);
+        var a1 = new Domain.Alumno(1, "Ana Garcia", 8.5);
+        var a2 = new Domain.Alumno(2, "Carlos López", 7.0);
+        var a3 = new Domain.Alumno(3, "Maria Fernandez", 9.2);
  
         casoList.AgregarAlumno(a1);
         casoList.AgregarAlumno(a2);
@@ -58,12 +58,12 @@ internal class Ejemplos
     //Eliminar un alumno por clave y listar por consola los alumnos
     public static void EjemploDictionary()
     {
-        var casoDictionary = new CasoDictionary();
+        var casoDictionary = new Collections.CasoDictionary();
  
         // Agregar 3 alumnos al diccionario
-        var a1 = new Alumno(101, "Laura Martínez", 8.0);
-        var a2 = new Alumno(102, "Diego Sánchez", 6.5);
-        var a3 = new Alumno(103, "Sofía Torres", 9.5);
+        var a1 = new Domain.Alumno(101, "Laura Martínez", 8.0);
+        var a2 = new Domain.Alumno(102, "Diego Sánchez", 6.5);
+        var a3 = new Domain.Alumno(103, "Sofía Torres", 9.5);
  
         casoDictionary.AgregarAlumno(a1);
         casoDictionary.AgregarAlumno(a2);
@@ -95,7 +95,7 @@ internal class Ejemplos
     //Realizar una llamada a cada método definido en CasoLinq y mostar por consola según corresponda
     public static void EjemploLinq()
     {
-                var casoLinq = new CasoLinq();
+                var casoLinq = new Collections.CasoLinq();
  
         Console.WriteLine("=== 1. Primer libro ===");
         Console.WriteLine(casoLinq.GetPrimero().Titulo);
