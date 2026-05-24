@@ -2,8 +2,8 @@
 # Desarrollo de Software
 ## Ejercicio N° 11
 
-Nombre: Luciana Elizabeth Guzman
-Comision: 3k3
-Legajo: 57967
-Gmail institucional: Guzman.Luciana@alu.frt.utn.edu.ar
+Nombre: Luciana Elizabeth Guzman  
+Comision: 3k3  
+Legajo: 57967  
+Gmail institucional: Guzman.Luciana@alu.frt.utn.edu.ar  
 
