@@ -7,19 +7,19 @@
 //Incluir un método para eliminar un alumno utilizando la clave
 public class CasoDictionary
 {
-    private Dictionary<int, Alumno> _alumnos = new Dictionary<int, Alumno>();
+    private Dictionary<int, Domain.Alumno> _alumnos = new Dictionary<int, Domain.Alumno>();
  
-    public void AgregarAlumno(Alumno alumno)
+    public void AgregarAlumno(Domain.Alumno alumno)
     {
         _alumnos[alumno.Id] = alumno;
     }
  
-    public Alumno? BuscarPorClave(int legajo)
+    public Domain.Alumno? BuscarPorClave(int legajo)
     {
         return _alumnos.TryGetValue(legajo, out var alumno) ? alumno : null;
     }
  
-    public Dictionary<int, Alumno> GetAlumnos()
+    public Dictionary<int, Domain.Alumno> GetAlumnos()
     {
         return _alumnos;
     }
